@@ -1,0 +1,38 @@
+package Anil;
+
+import static org.junit.Assert.assertTrue;
+
+import java.util.Scanner;
+class binary1
+
+{ 
+	public static void main(String[] args) 
+	{ Scanner in = new Scanner(System.in); 
+	// decimal number
+	int decimal = in.nextInt(); 
+	// convert decimal to binary
+	String binary = Integer.toBinaryString(decimal); 
+	
+	System.out.println("BINARY = " + binary); 
+	//convert decimal to octal
+	System.out.print("OCTAL = "); 
+	System.out.println(Integer.toOctalString(decimal));
+	//assertEqual("1100" , binary);
+	assertTrue(24== decimal);
+	
+	 }
+}
+	
+##output:
+24
+BINARY = 11000
+OCTAL = 30
+
+54
+BINARY = 110110
+OCTAL = 66
+Exception in thread "main" java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at Anil.binary1.main(binary1.java:21)
